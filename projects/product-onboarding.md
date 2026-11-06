@@ -1,40 +1,21 @@
 # Product Onboarding Funnel
-**Tableau Public · Product Analytics · Conversion Funnel**
 
-![Product onboarding dashboard](../assets/tableau_onboarding.jpg)
+A Tableau report following users from registration to trial and first payment.
 
-[Open live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/hw_36_kozak/ProductOnboardingFunnel?publish=yes)
+![Onboarding dashboard](../assets/tableau_onboarding.jpg)
 
-## Business question
+[Live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/hw_36_kozak/ProductOnboardingFunnel?publish=yes)
 
-How do users progress from registration to trial and payment, and where should a product team investigate drop-off?
+## What I built
 
-## Data
+Using educational user-event data, I created three KPI cards for registrations, trial users and paying users. The cards include registration-based conversion rates in their tooltips.
 
-Educational user-event data describing the steps from registration to first payment.
+The report combines monthly registration and trial trends with a funnel showing user counts and conversion rates. I used dual-axis charts and adjusted the labels and layout to keep the stages readable.
 
-## My work
+## How conversion is grouped
 
-- Created KPI cards for registered users, trial users and paying users.
-- Added registration-based trial and payment conversion rates to tooltips.
-- Built monthly registration and trial trends.
-- Created a funnel showing absolute user counts and conversion rates.
-- Refined labels, chart placement and funnel presentation.
+Trial conversion is grouped by the user's registration month, even if the trial started later. Dividing trial events in one calendar month by registrations in that same month would measure something different.
 
-## Result
+GoIT training project. This is a descriptive analysis of the supplied funnel data; no product experiment or conversion uplift was measured.
 
-A compact interactive report combining headline KPIs, monthly trends and an onboarding funnel.
-
-## Methodological note
-
-Trial conversion is analyzed by the user's registration month, regardless of the month in which the trial actually began. This cohort-based approach differs from dividing trial events in a calendar month by registrations in that same month.
-
-## Skills demonstrated
-
-KPI cards, conversion rates, dual-axis charts, funnel visualization, tooltips and dashboard layout.
-
-## Scope
-
-Educational product analytics project completed at GoIT. Product changes and an experiment were not implemented, so no conversion uplift is claimed. The live dashboard is linked above; raw event data and local workbook files are not included.
-
-[Back to portfolio](../README.md)
+[All dashboards](../README.md)
