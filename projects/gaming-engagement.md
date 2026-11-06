@@ -1,42 +1,23 @@
 # Gaming Activity & Engagement
-**Tableau Public · Gaming Analytics · Segmentation**
 
-![Gaming activity dashboard](../assets/tableau_gaming.jpg)
+A Tableau dashboard comparing player activity, Battle Pass usage and time spent across games and age groups.
 
-[Open live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/HW_34_KOZAK_PART1/Dashboard1?publish=yes)
+![Gaming dashboard](../assets/tableau_gaming.jpg)
 
-## Business question
+[Live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/HW_34_KOZAK_PART1/Dashboard1?publish=yes)
 
-How does player activity vary by game and age group, and how do users engage with Battle Pass activities?
+## What I built
 
-## Data
+I used educational activity records with game names, activity types, dates and user characteristics. I created calculated fields, an activity heatmap and age-group comparisons, and added filters for game and date.
 
-Educational gaming activity data containing game and activity names, dates and user characteristics.
+The preparation included separating game names from activity names and formatting time values as HH:MM.
 
-## My work
-
-- Prepared calculated fields for activity and Battle Pass analysis.
-- Built an activity heatmap and views comparing age groups.
-- Worked with average time spent per player and HH:MM formatting.
-- Separated game names from activity names to create a usable game filter.
-- Added game and date filters and refined the dashboard layout.
-
-## Result
-
-An interactive dashboard for comparing player engagement, activity patterns and time spent across selected segments.
-
-## Metric definition
+## The time metric
 
 **Average time per player = total time spent / number of players.**
 
-This is different from average session duration. Use the selected date range and filters consistently when comparing groups.
+This measures time per player within the selected period, not the average length of a session. Keep the date range and segment filters consistent when comparing groups.
 
-## Skills demonstrated
+GoIT training project using calculated fields, LOD expressions, table calculations and interactive filters. The dashboard describes the supplied data; it does not measure the effect of a product change on retention.
 
-Calculated fields, LOD expressions, table calculations, time metrics, segmentation, heatmaps and interactive filters.
-
-## Scope
-
-Educational project completed at GoIT. The dashboard describes activity in the supplied data; no increase in retention or gaming revenue is claimed. Live dashboard access is provided above; raw data and local workbook files are not included.
-
-[Back to portfolio](../README.md)
+[All dashboards](../README.md)
