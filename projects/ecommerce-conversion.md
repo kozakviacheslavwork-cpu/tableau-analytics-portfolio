@@ -1,44 +1,33 @@
 # Ecommerce Conversion Analysis
-**SQL · BigQuery · GA4 sample data · Tableau Public**
+
+I used SQL in BigQuery to prepare GA4 event data, then built a Tableau dashboard to follow sessions from first visit to purchase.
+
+**SQL · BigQuery · Tableau**
 
 ![Ecommerce dashboard](../assets/tableau_ecommerce.jpg)
 
-[Live Tableau dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/EcommerceConversionAnalysis_17830668997120/EcommerceConversionAnalysis) · [Submitted BigQuery query](https://console.cloud.google.com/bigquery?sq=578385795889:0e6e26b86c2542348ec8a620da0be80a)
+[Live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/EcommerceConversionAnalysis_17830668997120/EcommerceConversionAnalysis) · [Submitted SQL query](https://console.cloud.google.com/bigquery?sq=578385795889:0e6e26b86c2542348ec8a620da0be80a)
 
-## Business question
+## The analysis
 
-How do visitors progress from starting a session to making a purchase? Which stages, traffic sources and device categories should a marketing team investigate?
+The source is `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`, covering November 2020–January 2021.
 
-## Data
+The funnel follows seven steps: Session Start → View Item → Add to Cart → Begin Checkout → Add Shipping Info → Add Payment Info → Purchase.
 
-Public GA4 ecommerce sample: `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`. The dashboard covers November 2020–January 2021.
-
-## My work
-
-- Prepared event and session data with SQL in BigQuery.
-- Built a seven-step funnel: Session Start → View Item → Add to Cart → Begin Checkout → Add Shipping Info → Add Payment Info → Purchase.
-- Created session, purchase and conversion KPIs, plus session and conversion trends.
-- Added country, Traffic Medium and Device Category views.
-- Configured filters for session date, landing page, source, medium, campaign, device, language and operating system.
-- Refined the funnel, layout, filters and purchase-conversion tooltips.
+I added session and conversion trends, a country map, traffic-medium and device comparisons, and filters for date, landing page, source, medium, campaign, device, language and OS.
 
 ## Results
 
-| Metric | Value |
+| Measure | Value |
 | --- | ---: |
 | Sessions | 354,857 |
 | Purchases | 4,745 |
 | Purchase conversion | ≈1.34% |
-| SQL result rows, recorded in mentor review | 867,735 |
 
-The overall conversion is approximately `4,745 / 354,857 × 100`. Sessions, purchases and SQL output rows are distinct units; the row count must not be presented as a user count.
+The conversion shown is `4,745 / 354,857 × 100`. The submitted SQL produced 867,735 rows according to the project review; these are output rows, not unique sessions or users.
 
-## How to explore
+Use the live dashboard to compare segments with the same filters. Conversion from session start and conversion between consecutive stages answer different questions.
 
-Open the live dashboard, compare traffic and device segments, and inspect the funnel. Check the selected filters before comparing totals. Distinguish conversion from session start from conversion between consecutive stages.
+Final GoIT training project on public sample data. The analysis was not followed by a commercial rollout.
 
-## Scope
-
-Final educational project completed at GoIT. No changes were implemented in a commercial store, and no uplift in sales or profit is claimed. The repository links to the submitted SQL query; an exported SQL file is not included.
-
-[Back to portfolio](../README.md)
+[All dashboards](../README.md)
