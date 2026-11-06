@@ -1,42 +1,27 @@
-# SaaS Revenue & Cohort Analysis
-**Tableau Public · Revenue Analytics · Cohort Analysis**
+# SaaS Revenue & Cohorts
+
+I built two Tableau dashboards to explore revenue, paying users and revenue by cohort.
+
+**Tableau · Calculated fields · LOD · Table calculations**
 
 ![Revenue overview](../assets/tableau_revenue.jpg)
 
-[Open Revenue Overview](https://public.tableau.com/app/profile/viacheslav.kozak/viz/HW_32_KOZAK_SaaS_Revenue_Dashboard/Dashboard1?publish=yes)
+[Revenue Overview](https://public.tableau.com/app/profile/viacheslav.kozak/viz/HW_32_KOZAK_SaaS_Revenue_Dashboard/Dashboard1?publish=yes)
 
-## Business question
+## What I built
 
-How are revenue and paying users changing over time, and how does revenue evolve across customer cohorts?
+The first dashboard covers June 2022–May 2023 in educational transaction and user data. I calculated Total Revenue, Paid Users Count and ARPPU, then added trends, transaction distributions and segment filters.
 
-## Data
+The second dashboard adds a revenue cohort table and New MRR. I used LOD expressions and table calculations to build the cohort views.
 
-Educational transaction and user data. The Revenue Overview analysis covers June 2022–May 2023, as recorded in the project review.
+![Revenue and cohorts](../assets/tableau_cohorts.jpg)
 
-## My work
+[Revenue & Cohorts](https://public.tableau.com/app/profile/viacheslav.kozak/viz/HW_32_KOZAK_SaaS_Revenue_Dashboard/Dashboard2?publish=yes)
 
-- Connected data and created Total Revenue, Paid Users Count and ARPPU calculations.
-- Built revenue trends, transaction distributions and comparisons across segments.
-- Combined the views into an interactive dashboard with filters.
-- Extended the analysis with a revenue cohort table and New MRR using LOD expressions and table calculations.
-- Refined date display, filtering and dashboard layout.
+## Reading the dashboards
 
-## Revenue & Cohorts
+ARPPU measures revenue per paying user. When comparing cohorts, use the same cohort age and account for incomplete periods.
 
-![Revenue and cohort dashboard](../assets/tableau_cohorts.jpg)
+GoIT training project. The live views are available above; raw data and local workbook files are not included.
 
-[Open Revenue & Cohorts](https://public.tableau.com/app/profile/viacheslav.kozak/viz/HW_32_KOZAK_SaaS_Revenue_Dashboard/Dashboard2?publish=yes)
-
-## Result and interpretation
-
-Two connected dashboards support exploration of monetization over time and across cohorts. ARPPU summarizes revenue per paying user. Cohort views help compare groups over their observed periods; compare cohorts at the same age and avoid treating incomplete periods as complete observations.
-
-## Skills demonstrated
-
-Calculated fields, dimensions and measures, Revenue, Paid Users, ARPPU, New MRR, LOD expressions, table calculations, cohort visualization, dual axes and interactive filters.
-
-## Scope
-
-Educational product analytics project completed at GoIT. The dashboards support descriptive exploration; no measured commercial impact is claimed. Live dashboards are linked above; local workbook files and raw data are not included.
-
-[Back to portfolio](../README.md)
+[All dashboards](../README.md)
