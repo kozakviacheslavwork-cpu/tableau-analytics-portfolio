@@ -1,45 +1,34 @@
-# Tableau Analytics Portfolio
-**Viacheslav Kozak · Junior Data Analyst**
+# Tableau Dashboards
 
-Four analytics case studies exploring conversion, monetization and user engagement. Each case includes the business question, my work, dashboard previews, tools and methodological notes.
+Four projects I built during GoIT Data Analytics training. I used Tableau for the dashboards and SQL in BigQuery to prepare the ecommerce data.
 
-**Tools:** Tableau Public · SQL · BigQuery · GA4 sample data  
-**Methods:** funnel analysis · cohort analysis · calculated fields · LOD expressions · table calculations · segmentation
+## Ecommerce conversion
 
-## Featured case — Ecommerce Conversion Analysis
+[![Ecommerce dashboard](assets/tableau_ecommerce.jpg)](projects/ecommerce-conversion.md)
 
-[![Ecommerce conversion dashboard](assets/tableau_ecommerce.jpg)](projects/ecommerce-conversion.md)
+A seven-step funnel on GA4 sample data: **354,857 sessions, 4,745 purchases and 1.34% purchase conversion**.
 
-**354,857 sessions · 4,745 purchases · approximately 1.34% purchase conversion.**  
-SQL preparation of GA4 event data in BigQuery, a seven-step funnel and an interactive Tableau dashboard.
+[Project notes](projects/ecommerce-conversion.md) · [Live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/EcommerceConversionAnalysis_17830668997120/EcommerceConversionAnalysis)
 
-[Read the case study](projects/ecommerce-conversion.md) · [Open live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/EcommerceConversionAnalysis_17830668997120/EcommerceConversionAnalysis)
+## Revenue and engagement
 
-## More case studies
-
-| SaaS Revenue & Cohorts | Gaming Activity & Engagement |
+| SaaS revenue & cohorts | Gaming activity |
 | --- | --- |
 | [![Revenue dashboard](assets/tableau_revenue.jpg)](projects/saas-revenue-cohorts.md) | [![Gaming dashboard](assets/tableau_gaming.jpg)](projects/gaming-engagement.md) |
-| Revenue, paying users, ARPPU, New MRR and cohort visualization. [Explore](projects/saas-revenue-cohorts.md) | Battle Pass, player activity, age segments and time spent in games. [Explore](projects/gaming-engagement.md) |
+| Revenue, paying users, ARPPU and cohort comparisons. [Project notes](projects/saas-revenue-cohorts.md) | Time spent, Battle Pass activity and age groups. [Project notes](projects/gaming-engagement.md) |
 
-### Product Onboarding Funnel
+## Product onboarding
 
 [![Onboarding dashboard](assets/tableau_onboarding.jpg)](projects/product-onboarding.md)
 
-Registration → trial → payment: KPI cards, conversion rates and monthly dynamics.  
-[Read the case study](projects/product-onboarding.md) · [Open live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/hw_36_kozak/ProductOnboardingFunnel?publish=yes)
+Registration, trial and payment in one view, with monthly trends and conversion rates.
 
-## Project context
+[Project notes](projects/product-onboarding.md) · [Live dashboard](https://public.tableau.com/app/profile/viacheslav.kozak/viz/hw_36_kozak/ProductOnboardingFunnel?publish=yes)
 
-These are educational projects completed during GoIT Data Analytics training. The metrics describe the datasets; they do not represent measured business improvements following implementation.
+## Files
 
-This repository contains case-study documentation and screenshots of my published dashboards. Explore the live Tableau links for interactive filters. The ecommerce case also links to the submitted BigQuery query. Local Tableau workbook files, raw datasets and exported SQL scripts are not included.
+The `projects` folder contains the analysis notes and dashboard links; `assets` contains screenshots. The ecommerce notes also link to my submitted BigQuery query. Raw datasets and local Tableau workbook files are not stored here.
 
-## Other Python projects
+These projects explore educational datasets. The results describe the data, rather than changes measured after a business rollout.
 
-- [Stack Overflow Developer Survey Analysis](https://github.com/kozakviacheslavwork-cpu/stack-overflow-developer-survey-analysis)
-- [Movie Industry Analysis](https://github.com/kozakviacheslavwork-cpu/movie-analysis-project)
-
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/slavakozak/) · [Tableau Public](https://public.tableau.com/app/profile/viacheslav.kozak) · [Email](mailto:kozak.viacheslav.work@gmail.com)
+[Full portfolio](https://tested-rain-de9.notion.site/Viacheslav-Kozak-Junior-Data-Analyst-Portfolio-40c9a2006fe9818a9bf2f87c0e0d29c4) · [Tableau Public](https://public.tableau.com/app/profile/viacheslav.kozak) · [LinkedIn](https://www.linkedin.com/in/slavakozak/)
